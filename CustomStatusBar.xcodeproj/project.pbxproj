@@ -16,6 +16,8 @@
 		4FC870EB1773D93D0024DB32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC870EA1773D93D0024DB32 /* Default.png */; };
 		4FC870ED1773D93D0024DB32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC870EC1773D93D0024DB32 /* Default@2x.png */; };
 		4FC870EF1773D93D0024DB32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC870EE1773D93D0024DB32 /* Default-568h@2x.png */; };
+		4FC870F91773D9850024DB32 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC870F81773D9850024DB32 /* RootViewController.m */; };
+		4FC870FC1773DA1A0024DB32 /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC870FB1773DA1A0024DB32 /* CustomStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		4FC870EA1773D93D0024DB32 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4FC870EC1773D93D0024DB32 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4FC870EE1773D93D0024DB32 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4FC870F71773D9850024DB32 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/Controller/RootViewController.h; sourceTree = "<group>"; };
+		4FC870F81773D9850024DB32 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/Controller/RootViewController.m; sourceTree = "<group>"; };
+		4FC870FA1773DA1A0024DB32 /* CustomStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomStatusBar.h; path = Classes/View/CustomStatusBar.h; sourceTree = SOURCE_ROOT; };
+		4FC870FB1773DA1A0024DB32 /* CustomStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomStatusBar.m; path = Classes/View/CustomStatusBar.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		4FC870CC1773D93D0024DB32 = {
 			isa = PBXGroup;
 			children = (
+				4FC870F61773D9620024DB32 /* Controller */,
+				4FC870F51773D9500024DB32 /* View */,
 				4FC870DE1773D93D0024DB32 /* CustomStatusBar */,
 				4FC870D71773D93D0024DB32 /* Frameworks */,
 				4FC870D61773D93D0024DB32 /* Products */,
@@ -97,6 +105,24 @@
 				4FC870EE1773D93D0024DB32 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FC870F51773D9500024DB32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FC870FA1773DA1A0024DB32 /* CustomStatusBar.h */,
+				4FC870FB1773DA1A0024DB32 /* CustomStatusBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4FC870F61773D9620024DB32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FC870F71773D9850024DB32 /* RootViewController.h */,
+				4FC870F81773D9850024DB32 /* RootViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +192,8 @@
 			files = (
 				4FC870E51773D93D0024DB32 /* main.m in Sources */,
 				4FC870E91773D93D0024DB32 /* AppDelegate.m in Sources */,
+				4FC870F91773D9850024DB32 /* RootViewController.m in Sources */,
+				4FC870FC1773DA1A0024DB32 /* CustomStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +273,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomStatusBar/CustomStatusBar-Prefix.pch";
 				INFOPLIST_FILE = "CustomStatusBar/CustomStatusBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomStatusBar/CustomStatusBar-Prefix.pch";
 				INFOPLIST_FILE = "CustomStatusBar/CustomStatusBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
